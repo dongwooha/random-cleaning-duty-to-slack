@@ -1,2 +1,2 @@
-# random-cleaning-duty-to-slack
-pick one cleaning duty from members then send to slack
+# grouping-to-slack
+pick some members to do somthing from members then send to slack
