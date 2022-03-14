@@ -15,7 +15,7 @@ def lambda_handler(event, context):
     try:
         response = client.chat_postMessage(
             channel=environ['SLACK_CHANNEL'],
-            text=f"이번주 밥 멤버는 {sample(duty_member_list,3)} 입니다."
+            text=f"이번주 밥 멤버는 {sample(duty_member_list,'GROUP_SIZE')} 입니다."
         )
         print(response)
     except SlackApiError as e:
